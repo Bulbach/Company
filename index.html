@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company NAME</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Свяжись с нами</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-inline pull-right">
+                            <li><a href="#" title="Post"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" title="Post"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" title="Post"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" title="Post"><i class="fa fa-envelope-o"></i></a></li>
+                            <li><a href="tel:+902222222222"><i class="fa fa-phone"></i> +90 222 222 22 22</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero_area">
+        <div class="hero_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Работа в Европе</h1>
+                        <h2>Работа которую ты давно искал!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="site-main category-main">
+        <div class="container">
+            <div class="row">
+                <section class="category-content col-lg-10 col-lg-offset-1">
+                    <h2 class="category-title">ВАКАНСИИ</h2>
+                    <ul class="media-list">
+                        <li class="media">
+
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/electresiti.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Электрик</b></h3>
+                                <p>Электрик – специалист, который занимается установкой, ремонтом и обслуживанием
+                                    электросетей и электрооборудования. Его главная задача – обеспечить исправное
+                                    состояние, а также надежную и бесперебойную работу электрических сетей и
+                                    оборудования.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#myModal">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <!-- Модаль -->
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModalApply">Подать заявку</button>
+                                        <div class="modal fade" id="myModalApply" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label class="control-label"
+                                                                    for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="electresiti"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </aside>
+
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/santexnik.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Сантехник</b></h3>
+                                <p>Сантехник – это специалист, который занимается монтажом, эксплуатацией или ремонтом
+                                    санитарно-технического оборудования.
+                                    Он обеспечивает правильную работу систем отопления, водоснабжения и канализации как
+                                    в жилых домах, так
+                                    и на производстве.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#modalBySantexnik">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <!-- Модаль -->
+                                        <div class="modal fade" id="modalBySantexnik" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalBySantexnikApply">Подать заявку</button>
+                                        <div class="modal fade" id="modalBySantexnikApply" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="santexnik"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/fasadchik.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Фасадчик</b></h3>
+                                <p>Фасадчиками называют специалистов, выполняющих разные варианты фасадных отделочных
+                                    работ – облицовка, утепление,
+                                    оштукатуривание, покраска и т. п.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#modalByFasadchik">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <div class="modal fade" id="modalByFasadchik" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalByFasadchikApply">Подать заявку</button>
+                                        <div class="modal fade" id="modalByFasadchikApply" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label class="control-label"
+                                                                    for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="fasadchik"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/oblicovshik-plitochnik.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Плиточник</b></h3>
+                                <p> Плиточник — облицовщик — специалист по укладке плитки в помещениях. Он выполняет
+                                    работы по
+                                    устройству плиточных полов и облицовке внутренних поверхностей стен бань, прачечных
+                                    , санитарных узлов, ванных комнат и других помещений.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#modalByPlitochnik">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <div class="modal fade" id="modalByPlitochnik" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalByPlitochnikApply">Подать
+                                            заявку</button>
+                                        <div class="modal fade" id="modalByPlitochnikApply" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label class="control-label"
+                                                                    for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="plitochnik"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/armaturshik.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Арматурщик</b></h3>
+                                <p>Арматурщик - это рабочий строительной специальности, который занимается разработкой и
+                                    изготовлением железных каркасов и
+                                    арматурных сооружений.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#modalByArmaturshik">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <div class="modal fade" id="modalByArmaturshik" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalByArmaturshikApply">Подать
+                                            заявку</button>
+                                        <div class="modal fade" id="modalByArmaturshikApply" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label class="control-label"
+                                                                    for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="armaturshik"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/ekskovatorshik.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Экскаваторщик</b></h3>
+                                <p>Экскаваторщик - управляет одноковшовым экскаватором на гусеничном или колесном ходу
+                                    при строительстве дорог, каналов,
+                                    котлованов, плотин, подземных коммуникаций, траншей, укрытий, хранилищ и т.д.;
+                                    производит выемку грунта, его перемещение
+                                    и укладку в отвал или в транспортные средства.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#modalByEkskovatorshik">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <div class="modal fade" id="modalByEkskovatorshik" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalByEkskovatorshikApply">Подать
+                                            заявку</button>
+                                        <div class="modal fade" id="modalByEkskovatorshikApply" tabindex="-1"
+                                            role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label class="control-label"
+                                                                    for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="ekskovatorshik"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#" title="Post">
+                                    <img class="media-object" src="img/gipsokartonshik.jpg" alt="Post">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="category-title"><b>Гипсокартонщик</b></h3>
+                                <p>Гипсокартонщик - это специалист по работе с гипсокартоном, который может установить и
+                                    отремонтировать потолки, стены и
+                                    другие конструкции из этого строительного материала.</p>
+                                <aside class="meta category-meta">
+                                    <div class="pull-left">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#modalByEkskovatorshik">Подробности</button>
+                                        <!-- Модальное окно -->
+                                        <div class="modal fade" id="modalByGipsokartonshik" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Подробности</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Локация: </p>
+                                                        <p>Условия: </p>
+                                                        <p>Оплата: </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalByGipsokartonshikApply">Подать
+                                            заявку</button>
+                                        <div class="modal fade" id="modalByGipsokartonshikApply" tabindex="-1"
+                                            role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Заявка</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="form" onsubmit="return applyHandler(this)">
+                                                            <div class="form-group">
+                                                                <label class="control-label"
+                                                                    for="exampleInputName2">Name</label>
+                                                                <input name="Name" type="text" class="form-control"
+                                                                    id="exampleInputName2" placeholder="Jane Doe">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Email</label>
+                                                                <input name="Email" type="email" class="form-control"
+                                                                    id="exampleInputEmail2"
+                                                                    placeholder="jane.doe@example.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail2">Phone</label>
+                                                                <input name="Phone" type="tel" class="form-control"
+                                                                    id="exampleInputtel2" placeholder="+37529---------">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input name="prof" type="hidden" value="gipsokartonshik"
+                                                                    class="form-control" id="exampleInputProf2" hidden>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                invitation</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 fbox">
+                    <h4>CONTENT</h4>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p><a href="tel:+902222222222"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                            +90 222 222 22 22</a></p>
+                    <p><a href="mailto:iletisim@agrisosgb.com"><span class="glyphicon glyphicon-envelope"
+                                aria-hidden="true"></span> mail@awebsitename.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="pull-left">&copy; 2016 COMPANY NAME</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

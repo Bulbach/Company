@@ -334,7 +334,6 @@ h2.section-title {
 }
 .services .media {
     margin-top: 30px;
-    
 }
 .media {
     margin-top: 30px;
@@ -657,9 +656,10 @@ ul.big li:nth-child(2n) {
 .category-main .meta {
     position: absolute;
     bottom: 0;
+    width: 67%;
     min-height: 30px;
     line-height: 24px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 
 .category-main .meta .arc-comment {
@@ -794,8 +794,6 @@ h2.category-title:after {
     }
 
     .category-content .media-body {
-        
-        float: left;
         position: relative;
         width: 100%;
     }
@@ -825,8 +823,24 @@ h2.category-title:after {
         float: right !important;
     }
 }
-.bomp{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
+@media screen  and (min-width: 590px) and (max-width: 1030px) {
+    .category-main .meta {
+        bottom: 0;
+        width: 50%;
+        min-height: 30px;
+        line-height: 24px;
+        padding-bottom: 5px;
+    }
+}
+
+.tblok {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.bot {
+    flex: 0 0 auto;
+}
+.information {
+    flex: 1 0 auto;
 }
